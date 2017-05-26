@@ -6,9 +6,9 @@ import com.fasterxml.jackson.annotation.JsonView;
  * Created by liushenen on 2017/5/24.
  */
 public class User {
-    @JsonView(VIew.NameAndId.class)
+    @JsonView(View.NameAndId.class) //该接口将只返回name和id
     private  String name;
-    @JsonView(VIew.NameAndId.class)
+    @JsonView(View.NameAndId.class)//该接口将只返回name和id
     private String id;
     private String pwd;
 
